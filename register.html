@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MobileHub | Create Account</title>
+
+
+    <!-- Bootstrap CSS -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- Bootstrap Icons -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar custom-navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+
+                <span class="brand-icon">
+
+                    <i class="bi bi-phone"></i>
+
+                </span>
+
+                MobileHub
+
+            </a>
+
+
+            <a href="login.html" class="back-link">
+
+                <i class="bi bi-arrow-left"></i>
+
+                Back to Login
+
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= REGISTER SECTION ================= -->
+
+    <section class="register-section">
+
+        <div class="container">
+
+            <div class="register-card">
+
+                <div class="row g-0">
+
+
+                    <!-- LEFT SIDE -->
+
+                    <div class="col-lg-6">
+
+                        <div class="register-info">
+
+                            <div>
+
+                                <h1>
+                                    Start your<br>
+                                    journey.
+                                </h1>
+
+
+                                <p>
+                                    Create your MobileHub account and start
+                                    organizing your studies, skills and
+                                    career goals in one place.
+                                </p>
+
+
+                                <ul class="register-features">
+
+                                    <li>
+                                        <i class="bi bi-check-circle"></i>
+                                        Create your student profile
+                                    </li>
+
+                                    <li>
+                                        <i class="bi bi-check-circle"></i>
+                                        Plan your studies
+                                    </li>
+
+                                    <li>
+                                        <i class="bi bi-check-circle"></i>
+                                        Track your skills
+                                    </li>
+
+                                    <li>
+                                        <i class="bi bi-check-circle"></i>
+                                        Build your career roadmap
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+
+                            <div class="register-quote">
+
+                                "Your journey starts with one step."
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RIGHT SIDE -->
+
+                    <div class="col-lg-6">
+
+                        <div class="register-form-area">
+
+                            <h2>Create Account</h2>
+
+                            <p class="subtitle">
+                                Fill in your details to get started.
+                            </p>
+
+
+                            <!-- SUCCESS MESSAGE -->
+
+                            <div id="successMessage"
+                                 class="alert alert-success d-none"
+                                 role="alert">
+
+                                <i class="bi bi-check-circle-fill me-2"></i>
+
+                                Account created successfully!
+                                Redirecting to login...
+
+                            </div>
+
+
+                            <!-- REGISTER FORM -->
+
+                            <form id="registerForm">
+
+
+                                <!-- FULL NAME -->
+
+                                <div class="mb-3">
+
+                                    <label class="form-label">
+
+                                        Full Name
+
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="fullName"
+                                        class="form-control"
+                                        placeholder="Enter your full name"
+                                        required>
+
+                                </div>
+
+
+                                <!-- EMAIL -->
+
+                                <div class="mb-3">
+
+                                    <label class="form-label">
+
+                                        Email Address
+
+                                    </label>
+
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        class="form-control"
+                                        placeholder="Enter your email"
+                                        required>
+
+                                </div>
+
+
+                                <!-- PASSWORD -->
+
+                                <div class="mb-3">
+
+                                    <label class="form-label">
+
+                                        Password
+
+                                    </label>
+
+                                    <input
+                                        type="password"
+                                        id="password"
+                                        class="form-control"
+                                        placeholder="Create a password"
+                                        required>
+
+                                </div>
+
+
+                                <!-- CONFIRM PASSWORD -->
+
+                                <div class="mb-3">
+
+                                    <label class="form-label">
+
+                                        Confirm Password
+
+                                    </label>
+
+                                    <input
+                                        type="password"
+                                        id="confirmPassword"
+                                        class="form-control"
+                                        placeholder="Confirm your password"
+                                        required>
+
+
+                                    <!-- PASSWORD ERROR -->
+
+                                    <div id="passwordError"
+                                         class="text-danger mt-2 d-none">
+
+                                        Passwords do not match!
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- TERMS -->
+
+                                <div class="form-check mb-3">
+
+                                    <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id="terms"
+                                        required>
+
+                                    <label
+                                        class="form-check-label"
+                                        for="terms">
+
+                                        I agree to the Terms and Conditions
+
+                                    </label>
+
+                                </div>
+
+
+                                <!-- CREATE ACCOUNT BUTTON -->
+
+                                <button
+                                    type="submit"
+                                    class="create-btn">
+
+                                    Create Account
+
+                                    <i class="bi bi-arrow-right ms-1"></i>
+
+                                </button>
+
+                            </form>
+
+
+                            <!-- LOGIN LINK -->
+
+                            <p class="login-text">
+
+                                Already have an account?
+
+                                <a href="login.html">
+
+                                    Log In
+
+                                </a>
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        const registerForm =
+            document.getElementById("registerForm");
+
+        const fullName =
+            document.getElementById("fullName");
+
+        const email =
+            document.getElementById("email");
+
+        const password =
+            document.getElementById("password");
+
+        const confirmPassword =
+            document.getElementById("confirmPassword");
+
+        const passwordError =
+            document.getElementById("passwordError");
+
+        const successMessage =
+            document.getElementById("successMessage");
+
+
+        /* ================= CHECK PASSWORD ON BLUR ================= */
+
+        confirmPassword.addEventListener("blur", function () {
+
+            if (
+                confirmPassword.value !== "" &&
+                password.value !== confirmPassword.value
+            ) {
+
+                passwordError.classList.remove("d-none");
+
+                confirmPassword.classList.add("is-invalid");
+
+            } else {
+
+                passwordError.classList.add("d-none");
+
+                confirmPassword.classList.remove("is-invalid");
+
+            }
+
+        });
+
+
+        /* ================= CREATE ACCOUNT ================= */
+
+        registerForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+
+            // Check passwords again
+
+            if (password.value !== confirmPassword.value) {
+
+                passwordError.classList.remove("d-none");
+
+                confirmPassword.classList.add("is-invalid");
+
+                confirmPassword.focus();
+
+                return;
+
+            }
+
+
+            // Save account details
+
+            localStorage.setItem(
+                "userName",
+                fullName.value.trim()
+            );
+
+            localStorage.setItem(
+                "userEmail",
+                email.value.trim()
+            );
+
+            localStorage.setItem(
+                "userPassword",
+                password.value
+            );
+
+
+            // Hide form
+
+            registerForm.classList.add("d-none");
+
+            document
+                .querySelector(".login-text")
+                .classList.add("d-none");
+
+
+            // Show success message
+
+            successMessage.classList.remove("d-none");
+
+
+            // Redirect after 2 seconds
+
+            setTimeout(function () {
+
+                window.location.href = "login.html";
+
+            }, 2000);
+
+        });
+
+    </script>
+
+
+    <!-- Bootstrap JavaScript -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>

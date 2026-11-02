@@ -1,0 +1,4095 @@
+/* MobileHub shared stylesheet
+   Custom CSS collected from all MobileHub HTML pages.
+   Bootstrap remains loaded separately in each HTML page.
+*/
+
+/* ============================================================
+   SOURCE: index(1).html
+   ============================================================ */
+
+* {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f6;
+            color: #161616;
+        }
+
+
+        /* ================= NAVBAR ================= */
+
+        .custom-navbar {
+            background-color: #f8f8f6;
+            padding: 18px 0;
+        }
+
+        .navbar-brand {
+            font-size: 26px;
+            font-weight: 800;
+            color: #111 !important;
+            letter-spacing: -1px;
+        }
+
+        .brand-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            background-color: #111;
+            color: white;
+            border-radius: 10px;
+            margin-right: 8px;
+        }
+
+        .nav-link {
+            color: #555 !important;
+            font-weight: 500;
+            margin: 0 8px;
+        }
+
+        .nav-link:hover {
+            color: #000 !important;
+        }
+
+        .login-link {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            margin-right: 20px;
+        }
+
+        .start-btn {
+            background-color: #111;
+            color: white;
+            padding: 10px 22px;
+            border-radius: 10px;
+            font-weight: 600;
+            border: none;
+        }
+
+        .start-btn:hover {
+            background-color: #333;
+            color: white;
+        }
+
+
+        /* ================= HERO ================= */
+
+        .hero-section {
+            padding: 90px 0 60px;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: clamp(55px, 8vw, 120px);
+            font-weight: 800;
+            line-height: 0.95;
+            letter-spacing: -5px;
+            max-width: 1400px;
+            margin: auto;
+        }
+
+        .highlight-word {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    padding: 10px 35px;
+    border-radius: 100px;
+
+    font-size: 1em; /* Same size */
+    vertical-align: middle;
+
+    animation: changeColor 6s infinite;
+}
+
+	/* Color changing animation */
+	
+	@keyframes changeColor {
+	
+	    0% {
+	        background-color: #d9ead3;
+	        color: #111;
+	    }
+	
+	    25% {
+	        background-color: #f8d7da;
+	        color: #b02a37;
+	    }
+	
+	    50% {
+	        background-color: #cfe2ff;
+	        color: #084298;
+	    }
+	
+	    75% {
+	        background-color: #fff3cd;
+	        color: #664d03;
+	    }
+	
+	    100% {
+	        background-color: #d9ead3;
+	        color: #111;
+	    }
+	}
+
+        .grow-dot {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+
+    animation: changeDotColor 6s infinite;
+}
+
+@keyframes changeDotColor {
+
+    0% {
+        background-color: #111;
+    }
+
+    25% {
+        background-color: #dc3545;
+    }
+
+    50% {
+        background-color: #0d6efd;
+    }
+
+    75% {
+        background-color: #ffc107;
+    }
+
+    100% {
+        background-color: #111;
+    }
+}
+
+        .hero-description {
+            max-width: 720px;
+            margin: 35px auto 30px;
+            font-size: 20px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .hero-btn {
+            background-color: #111;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+
+        .hero-btn:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        .explore-btn {
+            background-color: white;
+            border: 1px solid #ddd;
+            color: #222;
+            padding: 14px 28px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+
+        .explore-btn:hover {
+            background-color: #eee;
+        }
+
+
+        /* ================= APP PREVIEW ================= */
+
+        .preview-section {
+            padding: 30px 0 100px;
+        }
+
+        .app-preview {
+            max-width: 1150px;
+            margin: auto;
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.12);
+        }
+
+        .preview-topbar {
+            height: 55px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .browser-dots {
+            display: flex;
+            gap: 7px;
+        }
+
+        .browser-dots span {
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background-color: #d8d8d8;
+        }
+
+        .preview-body {
+            display: flex;
+            min-height: 550px;
+        }
+
+
+        /* ================= SIDEBAR PREVIEW ================= */
+
+        .preview-sidebar {
+            width: 220px;
+            background-color: #171717;
+            padding: 25px 15px;
+            color: white;
+        }
+
+        .preview-logo {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 35px;
+        }
+
+        .preview-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .preview-menu li {
+            padding: 12px 14px;
+            margin-bottom: 8px;
+            border-radius: 8px;
+            color: #bbb;
+        }
+
+        .preview-menu li.active {
+            background-color: #333;
+            color: white;
+        }
+
+
+        /* ================= DASHBOARD PREVIEW ================= */
+
+        .preview-content {
+            flex: 1;
+            padding: 40px;
+            background-color: #fafafa;
+        }
+
+        .preview-content h2 {
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .preview-subtitle {
+            color: #777;
+        }
+
+        .stat-card {
+            background-color: white;
+            padding: 22px;
+            border-radius: 15px;
+            border: 1px solid #eee;
+            height: 100%;
+        }
+
+        .stat-icon {
+            font-size: 28px;
+        }
+
+        .stat-card h4 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+
+        .stat-card p {
+            color: #888;
+            margin-bottom: 0;
+        }
+
+        .task-box {
+            margin-top: 30px;
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #eee;
+        }
+
+        .task {
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .task:last-child {
+            border-bottom: none;
+        }
+
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background-color: #171717;
+            color: white;
+            padding: 35px 0;
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 991px) {
+
+            .hero-section {
+                padding-top: 70px;
+            }
+
+            .hero-title {
+                letter-spacing: -3px;
+            }
+
+            .navbar-nav {
+                padding: 20px 0;
+            }
+
+            .nav-link {
+                padding: 12px 0;
+            }
+
+            .login-link {
+                margin: 10px 0 15px;
+            }
+
+        }
+
+
+        @media (max-width: 767px) {
+
+            .hero-section {
+                padding: 60px 0 40px;
+            }
+
+            .hero-title {
+                font-size: 58px;
+                letter-spacing: -2px;
+                line-height: 1;
+            }
+
+            .highlight-word {
+                padding: 8px 20px;
+                gap: 10px;
+            }
+
+            .grow-dot {
+                width: 18px;
+                height: 18px;
+            }
+
+            .hero-description {
+                font-size: 17px;
+                padding: 0 10px;
+            }
+
+            .preview-body {
+                display: block;
+            }
+
+            .preview-sidebar {
+                width: 100%;
+            }
+
+            .preview-menu {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+            }
+
+            .preview-menu li {
+                margin: 0;
+                padding: 8px 10px;
+                font-size: 13px;
+            }
+
+            .preview-logo {
+                margin-bottom: 20px;
+            }
+
+            .preview-content {
+                padding: 25px 18px;
+            }
+
+            .preview-content h2 {
+                font-size: 25px;
+            }
+
+        }
+
+
+/* ============================================================
+   SOURCE: about.html
+   ============================================================ */
+
+/* ================= GENERAL ================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f6;
+            color: #161616;
+        }
+
+
+        /* ================= NAVBAR ================= */
+
+        .custom-navbar {
+            background-color: #f8f8f6;
+            padding: 18px 0;
+        }
+
+        .navbar-brand {
+            font-size: 26px;
+            font-weight: 800;
+            color: #111 !important;
+            letter-spacing: -1px;
+        }
+
+        .brand-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            background-color: #111;
+            color: white;
+            border-radius: 10px;
+            margin-right: 8px;
+        }
+
+        .nav-link {
+            color: #555 !important;
+            font-weight: 500;
+            margin: 0 8px;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #000 !important;
+            font-weight: 700;
+        }
+
+        .login-link {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            margin-right: 20px;
+        }
+
+        .start-btn {
+            background-color: #111;
+            color: white;
+            padding: 10px 22px;
+            border-radius: 10px;
+            font-weight: 600;
+            border: none;
+        }
+
+        .start-btn:hover {
+            background-color: #333;
+            color: white;
+        }
+
+
+        /* ================= HERO ================= */
+
+        .about-hero {
+            text-align: center;
+            padding: 90px 0 80px;
+        }
+
+        .small-title {
+            display: inline-block;
+            background-color: #e4e4e0;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        .about-title {
+            font-size: clamp(50px, 7vw, 100px);
+            font-weight: 800;
+            letter-spacing: -4px;
+            line-height: 0.95;
+            margin-bottom: 30px;
+        }
+
+        .about-description {
+            max-width: 750px;
+            margin: auto;
+            font-size: 20px;
+            color: #666;
+            line-height: 1.7;
+        }
+
+
+        /* ================= MOBILEHUB STORY ================= */
+
+        .story-section {
+            padding: 80px 0;
+        }
+
+        .story-box {
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 30px;
+            padding: 55px;
+        }
+
+        .story-box h2 {
+            font-size: clamp(35px, 4vw, 55px);
+            font-weight: 800;
+            margin-bottom: 25px;
+        }
+
+        .story-box p {
+            color: #666;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .story-visual {
+            height: 100%;
+            min-height: 350px;
+            background-color: #171717;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 120px;
+        }
+
+
+        /* ================= MISSION ================= */
+
+        .mission-section {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .mission-heading {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .mission-heading h2 {
+            font-size: clamp(40px, 5vw, 70px);
+            font-weight: 800;
+            letter-spacing: -3px;
+        }
+
+        .mission-heading p {
+            color: #666;
+            font-size: 18px;
+            max-width: 700px;
+            margin: 20px auto;
+        }
+
+        .mission-card {
+            background-color: #f8f8f6;
+            border-radius: 25px;
+            padding: 35px;
+            height: 100%;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .mission-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .mission-icon {
+            width: 75px;
+            height: 75px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 32px;
+            border: 1px solid #e5e5e5;
+        }
+
+        .mission-card h4 {
+            font-weight: 750;
+            margin-bottom: 15px;
+        }
+
+        .mission-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+
+        /* ================= VALUES ================= */
+
+        .values-section {
+            padding: 100px 0;
+        }
+
+        .values-title {
+            text-align: center;
+            font-size: clamp(40px, 5vw, 70px);
+            font-weight: 800;
+            letter-spacing: -3px;
+            margin-bottom: 60px;
+        }
+
+        .value-item {
+            border-bottom: 1px solid #ddd;
+            padding: 30px 0;
+        }
+
+        .value-number {
+            font-size: 18px;
+            color: #888;
+        }
+
+        .value-item h3 {
+            font-size: 32px;
+            font-weight: 800;
+        }
+
+        .value-item p {
+            color: #666;
+            margin-bottom: 0;
+            line-height: 1.7;
+        }
+
+
+        /* ================= CTA ================= */
+
+        .cta-section {
+            padding: 0 0 100px;
+        }
+
+        .cta-box {
+            background-color: #171717;
+            color: white;
+            border-radius: 30px;
+            padding: 70px 25px;
+            text-align: center;
+        }
+
+        .cta-box h2 {
+            font-size: clamp(40px, 5vw, 70px);
+            font-weight: 800;
+            letter-spacing: -3px;
+        }
+
+        .cta-box p {
+            color: #bbb;
+            font-size: 18px;
+            max-width: 650px;
+            margin: 25px auto;
+        }
+
+        .cta-btn {
+            background-color: white;
+            color: #111;
+            padding: 14px 28px;
+            border-radius: 10px;
+            font-weight: 700;
+        }
+
+        .cta-btn:hover {
+            background-color: #e8e8e8;
+            color: #111;
+        }
+
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background-color: #171717;
+            color: white;
+            padding: 35px 0;
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 991px) {
+
+            .navbar-nav {
+                padding: 20px 0;
+            }
+
+            .nav-link {
+                padding: 12px 0;
+            }
+
+            .login-link {
+                margin: 10px 0 15px;
+            }
+
+            .about-hero {
+                padding: 70px 0 60px;
+            }
+
+            .story-box {
+                padding: 35px;
+            }
+
+            .story-visual {
+                min-height: 250px;
+                margin-top: 30px;
+            }
+
+        }
+
+
+        @media (max-width: 767px) {
+
+            .about-title {
+                letter-spacing: -2px;
+            }
+
+            .about-description {
+                font-size: 17px;
+                padding: 0 10px;
+            }
+
+            .story-box {
+                padding: 25px;
+            }
+
+            .mission-card {
+                padding: 28px;
+            }
+
+        }
+
+
+/* ============================================================
+   SOURCE: achievements.html
+   ============================================================ */
+
+/* ================= GENERAL ================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f6;
+            color: #161616;
+        }
+
+
+        /* ================= NAVBAR ================= */
+
+        .custom-navbar {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 14px 0;
+        }
+
+        .navbar-brand {
+            font-size: 26px;
+            font-weight: 800;
+            color: #111 !important;
+            letter-spacing: -1px;
+        }
+
+        .brand-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            background-color: #111;
+            color: white;
+            border-radius: 10px;
+            margin-right: 8px;
+        }
+
+        .nav-link {
+            color: #555 !important;
+            font-weight: 600;
+            margin-left: 15px;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #111 !important;
+        }
+
+        .navbar-toggler {
+            border: 1px solid #ddd;
+            box-shadow: none !important;
+        }
+
+
+        /* ================= PAGE ================= */
+
+        .achievement-section {
+            padding: 60px 0;
+        }
+
+        .page-header {
+            margin-bottom: 40px;
+        }
+
+        .page-header h1 {
+            font-size: clamp(35px, 5vw, 55px);
+            font-weight: 800;
+            letter-spacing: -2px;
+            margin-bottom: 10px;
+        }
+
+        .page-header p {
+            color: #777;
+            font-size: 17px;
+        }
+
+
+        /* ================= STAT CARD ================= */
+
+        .stat-card {
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 18px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card h3 {
+            font-size: 35px;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+
+        .stat-card p {
+            color: #777;
+            margin-bottom: 0;
+        }
+
+
+        /* ================= CARD ================= */
+
+        .achievement-card {
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 22px;
+            padding: 30px;
+            height: 100%;
+        }
+
+        .achievement-card h3 {
+            font-weight: 750;
+            margin-bottom: 25px;
+        }
+
+
+        /* ================= FORM ================= */
+
+        .form-label {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .form-control,
+        .form-select {
+            padding: 13px 15px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            border-color: #111;
+            box-shadow: none;
+        }
+
+
+        /* ================= BUTTON ================= */
+
+        .add-btn {
+            width: 100%;
+            background-color: #111;
+            color: white;
+            border: none;
+            padding: 13px;
+            border-radius: 10px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .add-btn:hover {
+            background-color: #333;
+        }
+
+
+        /* ================= ACHIEVEMENT ITEM ================= */
+
+        .achievement-item {
+            border: 1px solid #e5e5e5;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+
+        .achievement-item:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+        }
+
+
+        /* ================= ICON ================= */
+
+        .achievement-icon {
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #111;
+            color: white;
+            border-radius: 14px;
+            font-size: 23px;
+            flex-shrink: 0;
+        }
+
+
+        /* ================= TEXT ================= */
+
+        .achievement-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .achievement-info {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+
+        .achievement-description {
+            color: #555;
+            font-size: 14px;
+            margin-top: 8px;
+            line-height: 1.6;
+        }
+
+
+        /* ================= TYPE BADGE ================= */
+
+        .type-badge {
+            display: inline-block;
+            background-color: #f1f1f1;
+            color: #333;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-top: 8px;
+        }
+
+
+        /* ================= DELETE BUTTON ================= */
+
+        .delete-btn {
+            border: none;
+            background-color: #f8d7da;
+            color: #842029;
+            padding: 8px 12px;
+            border-radius: 8px;
+        }
+
+
+        /* ================= EMPTY MESSAGE ================= */
+
+        .empty-message {
+            text-align: center;
+            color: #888;
+            padding: 50px 20px;
+        }
+
+        .empty-message i {
+            font-size: 45px;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 767px) {
+
+            .achievement-section {
+                padding: 40px 0;
+            }
+
+            .achievement-card {
+                padding: 22px;
+            }
+
+            .delete-btn {
+                margin-top: 15px;
+            }
+
+        }
+
+
+/* ============================================================
+   SOURCE: career.html
+   ============================================================ */
+
+/* ================= GENERAL ================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f6;
+            color: #161616;
+        }
+
+
+        /* ================= NAVBAR ================= */
+
+        .custom-navbar {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 14px 0;
+        }
+
+
+        .navbar-brand {
+            font-size: 26px;
+            font-weight: 800;
+            color: #111 !important;
+            letter-spacing: -1px;
+        }
+
+
+        .brand-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            background-color: #111;
+            color: white;
+            border-radius: 10px;
+            margin-right: 8px;
+        }
+
+
+        .nav-link {
+            color: #555 !important;
+            font-weight: 600;
+            margin-left: 15px;
+        }
+
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #111 !important;
+        }
+
+
+        .navbar-toggler {
+            border: 1px solid #ddd;
+            box-shadow: none !important;
+        }
+
+
+        /* ================= CAREER SECTION ================= */
+
+        .career-section {
+            padding: 60px 0;
+        }
+
+
+        /* ================= PAGE HEADER ================= */
+
+        .page-header {
+            margin-bottom: 40px;
+        }
+
+
+        .page-header h1 {
+            font-size: clamp(35px, 5vw, 55px);
+            font-weight: 800;
+            letter-spacing: -2px;
+            margin-bottom: 10px;
+        }
+
+
+        .page-header p {
+            color: #777;
+            font-size: 17px;
+        }
+
+
+        /* ================= CARD ================= */
+
+        .career-card {
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 22px;
+            padding: 30px;
+            height: 100%;
+        }
+
+
+        .career-card h3 {
+            font-weight: 750;
+            margin-bottom: 25px;
+        }
+
+
+        /* ================= FORM ================= */
+
+        .form-label {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+
+        .form-control,
+        .form-select {
+            padding: 13px 15px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+
+        .form-control:focus,
+        .form-select:focus {
+            border-color: #111;
+            box-shadow: none;
+        }
+
+
+        /* ================= BUTTON ================= */
+
+        .save-btn,
+        .add-btn {
+            width: 100%;
+            background-color: #111;
+            color: white;
+            border: none;
+            padding: 13px;
+            border-radius: 10px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+
+        .save-btn:hover,
+        .add-btn:hover {
+            background-color: #333;
+        }
+
+
+        /* ================= CAREER SUMMARY ================= */
+
+        .career-summary {
+            background-color: #171717;
+            color: white;
+            border-radius: 22px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+
+        .career-summary h2 {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+
+        .career-summary p {
+            color: #c9c9c9;
+            margin-bottom: 5px;
+        }
+
+
+        /* ================= PROGRESS ================= */
+
+        .progress {
+            height: 12px;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+
+
+        .progress-bar {
+            background-color: white;
+        }
+
+
+        .progress-text {
+            margin-top: 10px;
+            font-weight: 700;
+        }
+
+
+        /* ================= ROADMAP ================= */
+
+        .roadmap-item {
+            border: 1px solid #e5e5e5;
+            border-radius: 14px;
+            padding: 18px;
+            margin-bottom: 12px;
+            transition: 0.3s;
+        }
+
+
+        .roadmap-item.completed {
+            background-color: #f1f1f1;
+        }
+
+
+        .roadmap-item.completed .skill-name {
+            text-decoration: line-through;
+            opacity: 0.6;
+        }
+
+
+        .skill-name {
+            font-size: 17px;
+            font-weight: 700;
+        }
+
+
+        .skill-status {
+            font-size: 14px;
+            color: #777;
+            margin-top: 3px;
+        }
+
+
+        /* ================= ACTION BUTTONS ================= */
+
+        .complete-btn {
+            border: none;
+            background-color: #d1e7dd;
+            color: #0f5132;
+            padding: 8px 12px;
+            border-radius: 8px;
+            margin-right: 5px;
+        }
+
+
+        .delete-btn {
+            border: none;
+            background-color: #f8d7da;
+            color: #842029;
+            padding: 8px 12px;
+            border-radius: 8px;
+        }
+
+
+        /* ================= EMPTY MESSAGE ================= */
+
+        .empty-message {
+            text-align: center;
+            padding: 40px 20px;
+            color: #888;
+        }
+
+
+        .empty-message i {
+            font-size: 45px;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 767px) {
+
+            .career-section {
+                padding: 40px 0;
+            }
+
+
+            .career-card {
+                padding: 22px;
+            }
+
+
+            .roadmap-actions {
+                margin-top: 15px;
+            }
+
+        }
+
+
+/* ============================================================
+   SOURCE: dashboard.html
+   ============================================================ */
+
+* {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f6;
+            color: #161616;
+        }
+
+
+        /* ================= TOP NAVBAR ================= */
+
+        .top-navbar {
+            height: 75px;
+            background-color: white;
+            border-bottom: 1px solid #e5e5e5;
+            display: flex;
+            align-items: center;
+            padding: 0 25px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .brand {
+            font-size: 24px;
+            font-weight: 800;
+            color: #111;
+            text-decoration: none;
+        }
+
+        .brand-icon {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 38px;
+            height: 38px;
+            background-color: #111;
+            color: white;
+            border-radius: 10px;
+            margin-right: 8px;
+        }
+
+        .menu-btn {
+            border: none;
+            background: transparent;
+            font-size: 25px;
+            margin-right: 15px;
+        }
+
+        .profile-small {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #111;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+
+        /* ================= SIDEBAR ================= */
+
+        .sidebar {
+            width: 250px;
+            height: calc(100vh - 75px);
+            position: fixed;
+            top: 75px;
+            left: 0;
+            background-color: white;
+            border-right: 1px solid #e5e5e5;
+            padding: 25px 15px;
+        }
+
+        .sidebar .nav-link {
+            color: #666;
+            padding: 13px 15px;
+            border-radius: 10px;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+
+        .sidebar .nav-link i {
+            font-size: 18px;
+            margin-right: 12px;
+        }
+
+                .sidebar .nav-link {
+            color: #444 !important;
+            background-color: transparent !important;
+        }
+
+        .sidebar .nav-link:hover {
+            color: #111 !important;
+            background-color: #f5f5f5 !important;
+        }
+
+        .sidebar .nav-link.active {
+            color: #fff !important;
+            background-color: #111 !important;
+        }
+
+        .sidebar-bottom {
+            position: absolute;
+            bottom: 25px;
+            left: 15px;
+            right: 15px;
+        }
+
+
+        /* ================= MAIN CONTENT ================= */
+
+        .main-content {
+            margin-left: 250px;
+            margin-top: 75px;
+            padding: 40px;
+        }
+
+
+        /* ================= WELCOME ================= */
+
+        .welcome-section {
+            margin-bottom: 35px;
+        }
+
+        .welcome-section h1 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .welcome-section p {
+            color: #777;
+            font-size: 17px;
+        }
+
+        .date-box {
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 12px;
+            padding: 12px 18px;
+            font-weight: 600;
+        }
+
+
+        /* ================= PROGRESS CARD ================= */
+
+        .progress-card {
+            background-color: #171717;
+            color: white;
+            border-radius: 25px;
+            padding: 35px;
+            height: 100%;
+        }
+
+        .progress-card p {
+            color: #aaa;
+        }
+
+        .progress-number {
+            font-size: 60px;
+            font-weight: 800;
+        }
+
+        .progress {
+            height: 12px;
+            border-radius: 20px;
+            background-color: #444;
+        }
+
+        .progress-bar {
+            background-color: white;
+        }
+
+
+        /* ================= STATS ================= */
+
+        .stat-card {
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 20px;
+            padding: 25px;
+            height: 100%;
+        }
+
+        .stat-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #f1f1ef;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .stat-card h3 {
+            font-size: 30px;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+
+        .stat-card p {
+            color: #777;
+            margin: 0;
+        }
+
+
+        /* ================= SECTION TITLE ================= */
+
+        .section-title {
+            font-size: 25px;
+            font-weight: 800;
+            margin: 40px 0 20px;
+        }
+
+
+        /* ================= TASK CARD ================= */
+
+        .task-card {
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 18px;
+            padding: 20px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .task-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .task-check {
+            width: 22px;
+            height: 22px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .task-card h6 {
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .task-card small {
+            color: #888;
+        }
+
+        .task-status {
+            background-color: #f1f1ef;
+            padding: 7px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+
+        /* ================= GOALS ================= */
+
+        .goal-card {
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 20px;
+            padding: 25px;
+            height: 100%;
+        }
+
+        .goal-card h5 {
+            font-weight: 800;
+        }
+
+        .goal-card p {
+            color: #777;
+        }
+
+        .goal-progress {
+            height: 8px;
+            background-color: #eee;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-top: 15px;
+        }
+
+        .goal-progress-bar {
+            height: 100%;
+            background-color: #111;
+            border-radius: 20px;
+        }
+
+
+        /* ================= QUICK ACCESS ================= */
+
+        .quick-card {
+            display: block;
+            text-decoration: none;
+            color: #111;
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 18px;
+            padding: 25px;
+            height: 100%;
+            transition: 0.3s;
+        }
+
+        .quick-card:hover {
+            color: #111;
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+        }
+
+        .quick-card i {
+            font-size: 30px;
+        }
+
+        .quick-card h5 {
+            margin-top: 15px;
+            font-weight: 750;
+        }
+
+        .quick-card p {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 991px) {
+
+            .sidebar {
+                transform: translateX(-100%);
+                transition: 0.3s;
+                z-index: 999;
+            }
+
+            .sidebar.show {
+                transform: translateX(0);
+            }
+
+            .main-content {
+                margin-left: 0;
+                padding: 25px;
+            }
+
+        }
+
+
+        @media (max-width: 767px) {
+
+            .top-navbar {
+                padding: 0 15px;
+            }
+
+            .brand {
+                font-size: 20px;
+            }
+
+            .main-content {
+                padding: 20px 15px;
+            }
+
+            .welcome-section h1 {
+                font-size: 32px;
+            }
+
+            .progress-number {
+                font-size: 45px;
+            }
+
+            .date-box {
+                margin-top: 15px;
+            }
+
+            .task-card {
+                align-items: flex-start;
+            }
+
+        }
+
+
+/* ============================================================
+   SOURCE: explore.html
+   ============================================================ */
+
+/* ================= GENERAL ================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f6;
+            color: #161616;
+        }
+
+
+        /* ================= NAVBAR ================= */
+
+        .custom-navbar {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 14px 0;
+        }
+
+
+        .navbar-brand {
+            font-size: 26px;
+            font-weight: 800;
+            color: #111 !important;
+            letter-spacing: -1px;
+        }
+
+
+        .brand-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            background-color: #111;
+            color: white;
+            border-radius: 10px;
+            margin-right: 8px;
+        }
+
+
+        .nav-link {
+            color: #555 !important;
+            font-weight: 600;
+            margin-left: 15px;
+        }
+
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #111 !important;
+        }
+
+
+        .navbar-toggler {
+            border: 1px solid #ddd;
+            box-shadow: none !important;
+        }
+
+
+        /* ================= EXPLORE SECTION ================= */
+
+        .explore-section {
+            padding: 70px 0;
+        }
+
+
+        /* ================= HEADER ================= */
+
+        .explore-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 55px;
+        }
+
+
+        .explore-header h1 {
+            font-size: clamp(38px, 5vw, 60px);
+            font-weight: 800;
+            letter-spacing: -2px;
+            margin-bottom: 15px;
+        }
+
+
+        .explore-header p {
+            color: #777;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+
+        /* ================= FEATURE CARD ================= */
+
+        .feature-card {
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 22px;
+            padding: 30px;
+            height: 100%;
+            transition: 0.3s;
+        }
+
+
+        .feature-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+        }
+
+
+        /* ================= ICON ================= */
+
+        .feature-icon {
+            width: 58px;
+            height: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #111;
+            color: white;
+            border-radius: 16px;
+            font-size: 26px;
+            margin-bottom: 25px;
+        }
+
+
+        /* ================= CARD TEXT ================= */
+
+        .feature-card h3 {
+            font-size: 23px;
+            font-weight: 750;
+            margin-bottom: 12px;
+        }
+
+
+        .feature-card p {
+            color: #777;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+
+        /* ================= EXPLORE BUTTON ================= */
+
+        .explore-btn {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: #111;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+
+        .explore-btn:hover {
+            color: #555;
+        }
+
+
+        .explore-btn i {
+            margin-left: 8px;
+            transition: 0.3s;
+        }
+
+
+        .explore-btn:hover i {
+            transform: translateX(5px);
+        }
+
+
+        /* ================= WELCOME BOX ================= */
+
+        .welcome-box {
+            background-color: #171717;
+            color: white;
+            border-radius: 25px;
+            padding: 40px;
+            margin-bottom: 45px;
+        }
+
+
+        .welcome-box h2 {
+            font-size: 30px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+
+        .welcome-box p {
+            color: #bdbdbd;
+            margin-bottom: 0;
+            line-height: 1.7;
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 991px) {
+
+            .explore-section {
+                padding: 50px 0;
+            }
+
+
+            .feature-card {
+                padding: 25px;
+            }
+
+        }
+
+
+        @media (max-width: 767px) {
+
+            .explore-section {
+                padding: 40px 0;
+            }
+
+
+            .explore-header {
+                margin-bottom: 40px;
+            }
+
+
+            .welcome-box {
+                padding: 30px 25px;
+            }
+
+
+            .welcome-box h2 {
+                font-size: 26px;
+            }
+
+        }
+
+
+/* ============================================================
+   SOURCE: feature.html
+   ============================================================ */
+
+/* ================= GENERAL ================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f6;
+            color: #161616;
+        }
+
+
+        /* ================= NAVBAR ================= */
+
+        .custom-navbar {
+            background-color: #f8f8f6;
+            padding: 18px 0;
+        }
+
+        .navbar-brand {
+            font-size: 26px;
+            font-weight: 800;
+            color: #111 !important;
+            letter-spacing: -1px;
+        }
+
+        .brand-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            background-color: #111;
+            color: white;
+            border-radius: 10px;
+            margin-right: 8px;
+        }
+
+        .nav-link {
+            color: #555 !important;
+            font-weight: 500;
+            margin: 0 8px;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #000 !important;
+            font-weight: 700;
+        }
+
+        .login-link {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            margin-right: 20px;
+        }
+
+        .start-btn {
+            background-color: #111;
+            color: white;
+            padding: 10px 22px;
+            border-radius: 10px;
+            font-weight: 600;
+            border: none;
+        }
+
+        .start-btn:hover {
+            background-color: #333;
+            color: white;
+        }
+
+
+        /* ================= HERO ================= */
+
+        .features-hero {
+            text-align: center;
+            padding: 90px 0 70px;
+        }
+
+        .small-title {
+            display: inline-block;
+            background-color: #e4e4e0;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        .features-title {
+            font-size: clamp(50px, 7vw, 100px);
+            font-weight: 800;
+            letter-spacing: -4px;
+            line-height: 0.95;
+        }
+
+        .features-description {
+            max-width: 700px;
+            margin: 30px auto 0;
+            font-size: 20px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+
+        /* ================= FEATURES ================= */
+
+        .features-section {
+            padding: 20px 0 100px;
+        }
+
+        .feature-card {
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 25px;
+            padding: 35px;
+            height: 100%;
+            transition: 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.10);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+
+        /* Different feature icon backgrounds */
+
+        .study-icon {
+            background-color: #dbeafe;
+        }
+
+        .skill-icon {
+            background-color: #dcfce7;
+        }
+
+        .career-icon {
+            background-color: #fef3c7;
+        }
+
+        .profile-icon {
+            background-color: #fce7f3;
+        }
+
+        .achievement-icon {
+            background-color: #ede9fe;
+        }
+
+        .progress-icon {
+            background-color: #ffedd5;
+        }
+
+
+        .feature-card h3 {
+            font-weight: 750;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .explore-link {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #111;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .explore-link:hover {
+            transform: translateX(6px);
+            color: #555;
+        }
+
+
+        /* ================= CTA SECTION ================= */
+
+        .cta-section {
+            padding: 80px 0 100px;
+        }
+
+        .cta-box {
+            background-color: #171717;
+            color: white;
+            border-radius: 30px;
+            padding: 70px 30px;
+            text-align: center;
+        }
+
+        .cta-box h2 {
+            font-size: clamp(40px, 5vw, 70px);
+            font-weight: 800;
+            letter-spacing: -3px;
+        }
+
+        .cta-box p {
+            color: #bbb;
+            font-size: 18px;
+            max-width: 650px;
+            margin: 25px auto;
+        }
+
+        .cta-btn {
+            background-color: white;
+            color: #111;
+            padding: 14px 28px;
+            border-radius: 10px;
+            font-weight: 700;
+        }
+
+        .cta-btn:hover {
+            background-color: #e8e8e8;
+            color: #111;
+        }
+
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background-color: #171717;
+            color: white;
+            padding: 35px 0;
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 991px) {
+
+            .navbar-nav {
+                padding: 20px 0;
+            }
+
+            .nav-link {
+                padding: 12px 0;
+            }
+
+            .login-link {
+                margin: 10px 0 15px;
+            }
+
+            .features-hero {
+                padding: 70px 0 50px;
+            }
+
+        }
+
+
+        @media (max-width: 767px) {
+
+            .features-title {
+                letter-spacing: -2px;
+            }
+
+            .features-description {
+                font-size: 17px;
+                padding: 0 10px;
+            }
+
+            .feature-card {
+                padding: 28px;
+            }
+
+            .cta-box {
+                padding: 50px 20px;
+            }
+
+        }
+
+
+/* ============================================================
+   SOURCE: forgot-password.html
+   ============================================================ */
+
+* {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f6;
+            color: #161616;
+        }
+
+
+        /* ================= NAVBAR ================= */
+
+        .custom-navbar {
+            background-color: #f8f8f6;
+            padding: 18px 0;
+        }
+
+        .navbar-brand {
+            font-size: 26px;
+            font-weight: 800;
+            color: #111 !important;
+            letter-spacing: -1px;
+        }
+
+        .brand-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            background-color: #111;
+            color: white;
+            border-radius: 10px;
+            margin-right: 8px;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #555;
+            font-weight: 600;
+        }
+
+        .back-link:hover {
+            color: #111;
+        }
+
+
+        /* ================= SECTION ================= */
+
+        .forgot-section {
+            min-height: calc(100vh - 80px);
+            display: flex;
+            align-items: center;
+            padding: 50px 0;
+        }
+
+        .forgot-card {
+            max-width: 550px;
+            margin: auto;
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 25px;
+            padding: 50px;
+        }
+
+
+        /* ================= ICON ================= */
+
+        .forgot-icon {
+            width: 65px;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #111;
+            color: white;
+            border-radius: 18px;
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+
+
+        /* ================= TEXT ================= */
+
+        .forgot-card h1 {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .forgot-card p {
+            color: #777;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+
+        /* ================= FORM ================= */
+
+        .form-label {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .form-control {
+            padding: 14px 16px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .form-control:focus {
+            border-color: #111;
+            box-shadow: none;
+        }
+
+
+        /* ================= BUTTON ================= */
+
+        .reset-btn {
+            width: 100%;
+            background-color: #111;
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 10px;
+            font-weight: 700;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .reset-btn:hover {
+            background-color: #333;
+        }
+
+
+        /* ================= LOGIN LINK ================= */
+
+        .login-text {
+            text-align: center;
+            margin-top: 25px;
+            color: #777;
+        }
+
+        .login-text a {
+            color: #111;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 576px) {
+
+            .forgot-card {
+                padding: 35px 25px;
+                border-radius: 20px;
+            }
+
+            .forgot-card h1 {
+                font-size: 30px;
+            }
+
+        }
+
+
+/* ============================================================
+   SOURCE: how-it-works.html
+   ============================================================ */
+
+/* ================= GENERAL ================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f6;
+            color: #161616;
+        }
+
+
+        /* ================= NAVBAR ================= */
+
+        .custom-navbar {
+            background-color: #f8f8f6;
+            padding: 18px 0;
+        }
+
+        .navbar-brand {
+            font-size: 26px;
+            font-weight: 800;
+            color: #111 !important;
+            letter-spacing: -1px;
+        }
+
+        .brand-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            background-color: #111;
+            color: white;
+            border-radius: 10px;
+            margin-right: 8px;
+        }
+
+        .nav-link {
+            color: #555 !important;
+            font-weight: 500;
+            margin: 0 8px;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #000 !important;
+            font-weight: 700;
+        }
+
+        .login-link {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            margin-right: 20px;
+        }
+
+        .start-btn {
+            background-color: #111;
+            color: white;
+            padding: 10px 22px;
+            border-radius: 10px;
+            font-weight: 600;
+            border: none;
+        }
+
+        .start-btn:hover {
+            background-color: #333;
+            color: white;
+        }
+
+
+        /* ================= HERO ================= */
+
+        .hero-section {
+            text-align: center;
+            padding: 90px 0 80px;
+        }
+
+        .small-title {
+            display: inline-block;
+            background-color: #e4e4e0;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        .hero-title {
+            font-size: clamp(50px, 7vw, 100px);
+            font-weight: 800;
+            letter-spacing: -4px;
+            line-height: 0.95;
+            margin-bottom: 30px;
+        }
+
+       .hero-title span {
+    color: #161616;
+}
+
+        .hero-description {
+            max-width: 700px;
+            margin: auto;
+            font-size: 20px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+
+        /* ================= STEPS ================= */
+
+        .steps-section {
+            padding: 20px 0 100px;
+        }
+
+        .step-card {
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 25px;
+            padding: 40px 35px;
+            height: 100%;
+            transition: 0.3s ease;
+            position: relative;
+        }
+
+        .step-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.10);
+        }
+
+        .step-number {
+            width: 55px;
+            height: 55px;
+            background-color: #111;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .step-icon {
+            font-size: 55px;
+            margin-bottom: 25px;
+        }
+
+        .step-card h2 {
+            font-weight: 800;
+            margin-bottom: 18px;
+        }
+
+        .step-card p {
+            color: #666;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .step-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 25px;
+        }
+
+        .step-list li {
+            margin-bottom: 12px;
+            color: #444;
+        }
+
+        .step-list i {
+            color: #198754;
+            margin-right: 8px;
+        }
+
+
+        /* ================= JOURNEY SECTION ================= */
+
+        .journey-section {
+            padding: 80px 0 100px;
+            background-color: white;
+        }
+
+        .journey-heading {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .journey-heading h2 {
+            font-size: clamp(40px, 5vw, 70px);
+            font-weight: 800;
+            letter-spacing: -3px;
+        }
+
+        .journey-heading p {
+            color: #666;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .journey-box {
+            max-width: 1000px;
+            margin: auto;
+            background-color: #f8f8f6;
+            border-radius: 25px;
+            padding: 50px 30px;
+        }
+
+        .journey-item {
+            text-align: center;
+        }
+
+        .journey-circle {
+            width: 90px;
+            height: 90px;
+            margin: auto;
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        .journey-item h5 {
+            font-weight: 700;
+        }
+
+        .journey-arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            color: #999;
+        }
+
+
+        /* ================= CTA ================= */
+
+        .cta-section {
+            padding: 100px 0;
+        }
+
+        .cta-box {
+            background-color: #171717;
+            color: white;
+            border-radius: 30px;
+            text-align: center;
+            padding: 70px 25px;
+        }
+
+        .cta-box h2 {
+            font-size: clamp(40px, 5vw, 70px);
+            font-weight: 800;
+            letter-spacing: -3px;
+        }
+
+        .cta-box p {
+            color: #bbb;
+            max-width: 650px;
+            margin: 25px auto;
+            font-size: 18px;
+        }
+
+        .cta-btn {
+            background-color: white;
+            color: #111;
+            padding: 14px 28px;
+            border-radius: 10px;
+            font-weight: 700;
+        }
+
+        .cta-btn:hover {
+            background-color: #e8e8e8;
+            color: #111;
+        }
+
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background-color: #171717;
+            color: white;
+            padding: 35px 0;
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 991px) {
+
+            .navbar-nav {
+                padding: 20px 0;
+            }
+
+            .nav-link {
+                padding: 12px 0;
+            }
+
+            .login-link {
+                margin: 10px 0 15px;
+            }
+
+            .hero-section {
+                padding: 70px 0 60px;
+            }
+
+            .journey-arrow {
+                transform: rotate(90deg);
+                margin: 20px 0;
+            }
+
+        }
+
+
+        @media (max-width: 767px) {
+
+            .hero-title {
+                letter-spacing: -2px;
+            }
+
+            .hero-description {
+                font-size: 17px;
+                padding: 0 10px;
+            }
+
+            .step-card {
+                padding: 30px 25px;
+            }
+
+            .journey-box {
+                padding: 40px 20px;
+            }
+
+        }
+
+
+/* ============================================================
+   SOURCE: login.html
+   ============================================================ */
+
+/* ================= GENERAL ================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f6;
+            color: #161616;
+        }
+
+
+        /* ================= NAVBAR ================= */
+
+        .custom-navbar {
+            background-color: #f8f8f6;
+            padding: 18px 0;
+        }
+
+        .navbar-brand {
+            font-size: 26px;
+            font-weight: 800;
+            color: #111 !important;
+            letter-spacing: -1px;
+        }
+
+        .brand-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            background-color: #111;
+            color: white;
+            border-radius: 10px;
+            margin-right: 8px;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #555;
+            font-weight: 600;
+        }
+
+        .back-link:hover {
+            color: #111;
+        }
+
+
+        /* ================= LOGIN SECTION ================= */
+
+        .login-section {
+            min-height: calc(100vh - 80px);
+            display: flex;
+            align-items: center;
+            padding: 60px 0;
+        }
+
+        .login-card {
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+
+
+        /* ================= LEFT SIDE ================= */
+
+        .login-info {
+            background-color: #171717;
+            color: white;
+            height: 100%;
+            padding: 70px 55px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .login-info h1 {
+            font-size: clamp(45px, 5vw, 70px);
+            font-weight: 800;
+            letter-spacing: -3px;
+            line-height: 1;
+        }
+
+        .login-info p {
+            color: #bdbdbd;
+            font-size: 17px;
+            line-height: 1.7;
+            margin-top: 25px;
+        }
+
+        .login-features {
+            list-style: none;
+            padding: 0;
+            margin-top: 40px;
+        }
+
+        .login-features li {
+            margin-bottom: 18px;
+            font-size: 16px;
+        }
+
+        .login-features i {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        .login-quote {
+            border-top: 1px solid #444;
+            padding-top: 25px;
+            color: #aaa;
+            font-style: italic;
+        }
+
+
+        /* ================= RIGHT SIDE ================= */
+
+        .login-form-area {
+            padding: 70px 55px;
+        }
+
+        .login-form-area h2 {
+            font-size: 38px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #777;
+            margin-bottom: 35px;
+        }
+
+
+        /* ================= FORM ================= */
+
+        .form-label {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .form-control {
+            padding: 14px 16px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .form-control:focus {
+            border-color: #111;
+            box-shadow: none;
+        }
+
+        .form-check-input:checked {
+            background-color: #111;
+            border-color: #111;
+        }
+
+        .forgot-password {
+            color: #555;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .login-btn {
+            width: 100%;
+            background-color: #111;
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .login-btn:hover {
+            background-color: #333;
+            color: white;
+        }
+
+
+        /* ================= DIVIDER ================= */
+
+        .divider {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: #999;
+            margin: 30px 0;
+            font-size: 14px;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background-color: #ddd;
+        }
+
+
+        /* ================= GOOGLE BUTTON ================= */
+
+        .google-btn {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: white;
+            font-weight: 600;
+        }
+
+        .signup-text {
+            text-align: center;
+            color: #777;
+            margin-top: 30px;
+        }
+
+        .signup-text a {
+            color: #111;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 991px) {
+
+            .login-info {
+                padding: 50px 40px;
+            }
+
+            .login-form-area {
+                padding: 50px 40px;
+            }
+
+        }
+
+
+        @media (max-width: 767px) {
+
+            .login-section {
+                padding: 30px 0;
+            }
+
+            .login-info {
+                padding: 45px 30px;
+            }
+
+            .login-form-area {
+                padding: 45px 30px;
+            }
+
+            .login-info h1 {
+                font-size: 45px;
+            }
+
+        }
+
+
+/* ============================================================
+   SOURCE: profile.html
+   ============================================================ */
+
+* {
+            box-sizing: border-box;
+        }
+
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f6;
+            color: #161616;
+        }
+
+
+        /* ================= NAVBAR ================= */
+
+        .custom-navbar {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 15px 0;
+        }
+
+
+        .navbar-brand {
+            font-size: 26px;
+            font-weight: 800;
+            color: #111 !important;
+            letter-spacing: -1px;
+        }
+
+
+        .brand-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            background-color: #111;
+            color: white;
+            border-radius: 10px;
+            margin-right: 8px;
+        }
+
+
+        .back-link {
+            text-decoration: none;
+            color: #555;
+            font-weight: 600;
+        }
+
+
+        .back-link:hover {
+            color: #111;
+        }
+
+
+        /* ================= PROFILE SECTION ================= */
+
+        .profile-section {
+            padding: 60px 0;
+        }
+
+
+        .profile-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+
+        .profile-header h1 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+
+        .profile-header p {
+            color: #777;
+            font-size: 17px;
+        }
+
+
+        /* ================= PROFILE CARD ================= */
+
+        .profile-card {
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 25px;
+            padding: 45px;
+        }
+
+
+        /* ================= PROFILE ICON ================= */
+
+        .profile-icon {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #111;
+            color: white;
+            border-radius: 50%;
+            font-size: 40px;
+        }
+
+
+        /* ================= FORM ================= */
+
+        .form-label {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+
+        .form-control,
+        .form-select {
+            padding: 13px 15px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+
+        .form-control:focus,
+        .form-select:focus {
+            border-color: #111;
+            box-shadow: none;
+        }
+
+
+        /* ================= SAVE BUTTON ================= */
+
+        .save-btn {
+            width: 100%;
+            background-color: #111;
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 10px;
+            font-weight: 700;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+
+        .save-btn:hover {
+            background-color: #333;
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 576px) {
+
+            .profile-section {
+                padding: 35px 0;
+            }
+
+
+            .profile-card {
+                padding: 30px 20px;
+                border-radius: 20px;
+            }
+
+
+            .profile-header h1 {
+                font-size: 32px;
+            }
+
+        }
+
+
+/* ============================================================
+   SOURCE: register.html
+   ============================================================ */
+
+/* ================= GENERAL ================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f6;
+            color: #161616;
+        }
+
+
+        /* ================= NAVBAR ================= */
+
+        .custom-navbar {
+            background-color: #f8f8f6;
+            padding: 18px 0;
+        }
+
+        .navbar-brand {
+            font-size: 26px;
+            font-weight: 800;
+            color: #111 !important;
+            letter-spacing: -1px;
+        }
+
+        .brand-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            background-color: #111;
+            color: white;
+            border-radius: 10px;
+            margin-right: 8px;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #555;
+            font-weight: 600;
+        }
+
+        .back-link:hover {
+            color: #111;
+        }
+
+
+        /* ================= REGISTER SECTION ================= */
+
+        .register-section {
+            min-height: calc(100vh - 80px);
+            display: flex;
+            align-items: center;
+            padding: 50px 0;
+        }
+
+        .register-card {
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+
+
+        /* ================= LEFT SIDE ================= */
+
+        .register-info {
+            background-color: #171717;
+            color: white;
+            height: 100%;
+            padding: 70px 55px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .register-info h1 {
+            font-size: clamp(45px, 5vw, 70px);
+            font-weight: 800;
+            letter-spacing: -3px;
+            line-height: 1;
+        }
+
+        .register-info p {
+            color: #bdbdbd;
+            font-size: 17px;
+            line-height: 1.7;
+            margin-top: 25px;
+        }
+
+        .register-features {
+            list-style: none;
+            padding: 0;
+            margin-top: 40px;
+        }
+
+        .register-features li {
+            margin-bottom: 18px;
+        }
+
+        .register-features i {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        .register-quote {
+            border-top: 1px solid #444;
+            padding-top: 25px;
+            color: #aaa;
+            font-style: italic;
+        }
+
+
+        /* ================= RIGHT SIDE ================= */
+
+        .register-form-area {
+            padding: 60px 55px;
+        }
+
+        .register-form-area h2 {
+            font-size: 38px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+
+        /* ================= FORM ================= */
+
+        .form-label {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .form-control {
+            padding: 13px 16px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .form-control:focus {
+            border-color: #111;
+            box-shadow: none;
+        }
+
+        .form-check-input:checked {
+            background-color: #111;
+            border-color: #111;
+        }
+
+
+        /* ================= CREATE BUTTON ================= */
+
+        .create-btn {
+            width: 100%;
+            background-color: #111;
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 10px;
+            font-weight: 700;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .create-btn:hover {
+            background-color: #333;
+        }
+
+
+        /* ================= LOGIN LINK ================= */
+
+        .login-text {
+            text-align: center;
+            color: #777;
+            margin-top: 25px;
+        }
+
+        .login-text a {
+            color: #111;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 991px) {
+
+            .register-info {
+                padding: 50px 40px;
+            }
+
+            .register-form-area {
+                padding: 50px 40px;
+            }
+
+        }
+
+
+        @media (max-width: 767px) {
+
+            .register-section {
+                padding: 30px 0;
+            }
+
+            .register-info {
+                padding: 45px 30px;
+            }
+
+            .register-form-area {
+                padding: 45px 30px;
+            }
+
+            .register-info h1 {
+                font-size: 45px;
+            }
+
+        }
+
+
+/* ============================================================
+   SOURCE: skills.html
+   ============================================================ */
+
+/* ================= GENERAL ================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f6;
+            color: #161616;
+        }
+
+
+        /* ================= NAVBAR ================= */
+
+        .custom-navbar {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 14px 0;
+        }
+
+
+        .navbar-brand {
+            font-size: 26px;
+            font-weight: 800;
+            color: #111 !important;
+            letter-spacing: -1px;
+        }
+
+
+        .brand-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            background-color: #111;
+            color: white;
+            border-radius: 10px;
+            margin-right: 8px;
+        }
+
+
+        .nav-link {
+            color: #555 !important;
+            font-weight: 600;
+            margin-left: 15px;
+        }
+
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #111 !important;
+        }
+
+
+        .navbar-toggler {
+            border: 1px solid #ddd;
+            box-shadow: none !important;
+        }
+
+
+        /* ================= SKILLS SECTION ================= */
+
+        .skills-section {
+            padding: 60px 0;
+        }
+
+
+        /* ================= PAGE HEADER ================= */
+
+        .page-header {
+            margin-bottom: 40px;
+        }
+
+
+        .page-header h1 {
+            font-size: clamp(35px, 5vw, 55px);
+            font-weight: 800;
+            letter-spacing: -2px;
+            margin-bottom: 10px;
+        }
+
+
+        .page-header p {
+            color: #777;
+            font-size: 17px;
+        }
+
+
+        /* ================= STATISTICS ================= */
+
+        .stat-card {
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 18px;
+            padding: 25px;
+            height: 100%;
+        }
+
+
+        .stat-card h3 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+
+
+        .stat-card p {
+            color: #777;
+            margin-bottom: 0;
+        }
+
+
+        /* ================= CARD ================= */
+
+        .skills-card {
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 22px;
+            padding: 30px;
+            height: 100%;
+        }
+
+
+        .skills-card h3 {
+            font-weight: 750;
+            margin-bottom: 25px;
+        }
+
+
+        /* ================= FORM ================= */
+
+        .form-label {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+
+        .form-control,
+        .form-select {
+            padding: 13px 15px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+
+        .form-control:focus,
+        .form-select:focus {
+            border-color: #111;
+            box-shadow: none;
+        }
+
+
+        /* ================= ADD BUTTON ================= */
+
+        .add-btn {
+            width: 100%;
+            background-color: #111;
+            color: white;
+            border: none;
+            padding: 13px;
+            border-radius: 10px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+
+        .add-btn:hover {
+            background-color: #333;
+        }
+
+
+        /* ================= SKILL ITEM ================= */
+
+        .skill-item {
+            border: 1px solid #e5e5e5;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+
+        .skill-name {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+
+        .skill-category {
+            color: #777;
+            font-size: 14px;
+            margin-top: 3px;
+        }
+
+
+        /* ================= PROGRESS BAR ================= */
+
+        .progress {
+            height: 10px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+
+        .progress-bar {
+            background-color: #111;
+        }
+
+
+        .progress-text {
+            font-size: 14px;
+            font-weight: 700;
+            margin-top: 8px;
+        }
+
+
+        /* ================= BUTTONS ================= */
+
+        .skill-actions button {
+            border: none;
+            padding: 8px 12px;
+            border-radius: 8px;
+            margin-left: 5px;
+        }
+
+
+        .edit-btn {
+            background-color: #e9ecef;
+            color: #111;
+        }
+
+
+        .delete-btn {
+            background-color: #f8d7da;
+            color: #842029;
+        }
+
+
+        /* ================= EMPTY MESSAGE ================= */
+
+        .empty-message {
+            text-align: center;
+            color: #888;
+            padding: 50px 20px;
+        }
+
+
+        .empty-message i {
+            font-size: 45px;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 767px) {
+
+            .skills-section {
+                padding: 40px 0;
+            }
+
+
+            .skill-item {
+                padding: 18px;
+            }
+
+
+            .skill-actions {
+                margin-top: 15px;
+            }
+
+
+            .skill-actions button {
+                margin-left: 0;
+                margin-right: 5px;
+            }
+
+        }
+
+
+/* ============================================================
+   SOURCE: study-planner.html
+   ============================================================ */
+
+* {
+            box-sizing: border-box;
+        }
+
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f6;
+            color: #161616;
+        }
+
+
+        /* ================= NAVBAR ================= */
+
+        .custom-navbar {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 14px 0;
+        }
+
+
+        .navbar-brand {
+            font-size: 26px;
+            font-weight: 800;
+            color: #111 !important;
+            letter-spacing: -1px;
+        }
+
+
+        .brand-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            background-color: #111;
+            color: white;
+            border-radius: 10px;
+            margin-right: 8px;
+        }
+
+
+        .nav-link {
+            color: #555 !important;
+            font-weight: 600;
+            margin-left: 15px;
+        }
+
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #111 !important;
+        }
+
+
+        .navbar-toggler {
+            border: 1px solid #ddd;
+            box-shadow: none !important;
+        }
+
+
+        /* ================= PAGE ================= */
+
+        .planner-section {
+            padding: 60px 0;
+        }
+
+
+        .page-header {
+            margin-bottom: 40px;
+        }
+
+
+        .page-header h1 {
+            font-size: clamp(35px, 5vw, 55px);
+            font-weight: 800;
+            letter-spacing: -2px;
+            margin-bottom: 10px;
+        }
+
+
+        .page-header p {
+            color: #777;
+            font-size: 17px;
+        }
+
+
+        /* ================= STATS ================= */
+
+        .stat-card {
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 18px;
+            padding: 25px;
+            height: 100%;
+        }
+
+
+        .stat-card h3 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+
+
+        .stat-card p {
+            color: #777;
+            margin-bottom: 0;
+        }
+
+
+        /* ================= FORM CARD ================= */
+
+        .planner-card {
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 22px;
+            padding: 30px;
+        }
+
+
+        .planner-card h3 {
+            font-weight: 750;
+            margin-bottom: 25px;
+        }
+
+
+        .form-label {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+
+        .form-control,
+        .form-select {
+            padding: 13px 15px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+
+        .form-control:focus,
+        .form-select:focus {
+            border-color: #111;
+            box-shadow: none;
+        }
+
+
+        /* ================= BUTTON ================= */
+
+        .add-btn {
+            width: 100%;
+            background-color: #111;
+            color: white;
+            border: none;
+            padding: 13px;
+            border-radius: 10px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+
+        .add-btn:hover {
+            background-color: #333;
+        }
+
+
+        /* ================= TASK LIST ================= */
+
+        .task-list {
+            margin-top: 30px;
+        }
+
+
+        .task-item {
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+
+
+        .task-item.completed {
+            opacity: 0.65;
+        }
+
+
+        .task-item.completed .task-title {
+            text-decoration: line-through;
+        }
+
+
+        .task-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+
+        .task-details {
+            color: #777;
+            font-size: 14px;
+        }
+
+
+        /* ================= PRIORITY ================= */
+
+        .priority {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+
+        .priority-high {
+            background-color: #f8d7da;
+            color: #842029;
+        }
+
+
+        .priority-medium {
+            background-color: #fff3cd;
+            color: #664d03;
+        }
+
+
+        .priority-low {
+            background-color: #d1e7dd;
+            color: #0f5132;
+        }
+
+
+        /* ================= TASK BUTTONS ================= */
+
+        .task-actions button {
+            border: none;
+            padding: 8px 12px;
+            border-radius: 8px;
+            margin-left: 5px;
+        }
+
+
+        .complete-btn {
+            background-color: #d1e7dd;
+            color: #0f5132;
+        }
+
+
+        .delete-btn {
+            background-color: #f8d7da;
+            color: #842029;
+        }
+
+
+        /* ================= EMPTY MESSAGE ================= */
+
+        .empty-message {
+            text-align: center;
+            color: #888;
+            padding: 50px 20px;
+        }
+
+
+        .empty-message i {
+            font-size: 45px;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 767px) {
+
+            .planner-section {
+                padding: 40px 0;
+            }
+
+
+            .task-item {
+                padding: 18px;
+            }
+
+
+            .task-actions {
+                margin-top: 15px;
+            }
+
+
+            .task-actions button {
+                margin-left: 0;
+                margin-right: 5px;
+            }
+
+        }
+
+
+/* ============================================================
+   MOBILEHUB SHARED NAVBAR
+   Fixed on every page that uses .custom-navbar.
+   Dashboard uses .top-navbar and is intentionally excluded.
+   ============================================================ */
+
+.custom-navbar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050;
+}
+
+body:has(.custom-navbar) {
+    padding-top: 75px;
+}
+

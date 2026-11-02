@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>MobileHub | Achievements</title>
+
+
+    <!-- Bootstrap CSS -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- Bootstrap Icons -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg custom-navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="dashboard.html">
+
+                <span class="brand-icon">
+
+                    <i class="bi bi-phone"></i>
+
+                </span>
+
+                MobileHub
+
+            </a>
+
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div
+                class="collapse navbar-collapse"
+                id="navbarMenu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="dashboard.html">
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="explore.html">
+                            Explore
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="study-planner.html">
+                            Study Planner
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="skills.html">
+                            Skills
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="career.html">
+                            Career
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                            href="achievements.html">
+                            Achievements
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="profile.html">
+                            Profile
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+
+    <section class="achievement-section">
+
+        <div class="container">
+
+
+            <!-- PAGE HEADER -->
+
+            <div class="page-header">
+
+                <h1>My Achievements</h1>
+
+                <p>
+                    Keep track of your certificates, projects,
+                    internships and accomplishments.
+                </p>
+
+            </div>
+
+
+            <!-- TOTAL ACHIEVEMENTS -->
+
+            <div class="stat-card">
+
+                <h3 id="totalAchievements">0</h3>
+
+                <p>Total Achievements</p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <!-- ================= ADD ACHIEVEMENT ================= -->
+
+                <div class="col-lg-4">
+
+                    <div class="achievement-card">
+
+                        <h3>Add Achievement</h3>
+
+
+                        <form id="achievementForm">
+
+
+                            <!-- TITLE -->
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Achievement Title
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="achievementTitle"
+                                    class="form-control"
+                                    placeholder="Example: Java Certificate"
+                                    required>
+
+                            </div>
+
+
+                            <!-- TYPE -->
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Achievement Type
+                                </label>
+
+                                <select
+                                    id="achievementType"
+                                    class="form-select"
+                                    required>
+
+                                    <option value="">
+                                        Select Type
+                                    </option>
+
+                                    <option value="Certificate">
+                                        Certificate
+                                    </option>
+
+                                    <option value="Project">
+                                        Project
+                                    </option>
+
+                                    <option value="Internship">
+                                        Internship
+                                    </option>
+
+                                    <option value="Course">
+                                        Course
+                                    </option>
+
+                                    <option value="Competition">
+                                        Competition
+                                    </option>
+
+                                    <option value="Other">
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- ORGANIZATION -->
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Organization / Platform
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="achievementOrganization"
+                                    class="form-control"
+                                    placeholder="Example: Coursera">
+
+                            </div>
+
+
+                            <!-- DATE -->
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Completion Date
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="achievementDate"
+                                    class="form-control"
+                                    required>
+
+                            </div>
+
+
+                            <!-- DESCRIPTION -->
+
+                            <div class="mb-4">
+
+                                <label class="form-label">
+                                    Description
+                                </label>
+
+                                <textarea
+                                    id="achievementDescription"
+                                    class="form-control"
+                                    rows="4"
+                                    placeholder="Write a short description..."></textarea>
+
+                            </div>
+
+
+                            <!-- BUTTON -->
+
+                            <button
+                                type="submit"
+                                class="add-btn">
+
+                                <i class="bi bi-plus-lg me-1"></i>
+
+                                Add Achievement
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= ACHIEVEMENT LIST ================= -->
+
+                <div class="col-lg-8">
+
+                    <div class="achievement-card">
+
+                        <h3>My Achievement List</h3>
+
+                        <div id="achievementList">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        /* ================= GET ELEMENTS ================= */
+
+        const achievementForm =
+            document.getElementById("achievementForm");
+
+        const achievementTitle =
+            document.getElementById("achievementTitle");
+
+        const achievementType =
+            document.getElementById("achievementType");
+
+        const achievementOrganization =
+            document.getElementById("achievementOrganization");
+
+        const achievementDate =
+            document.getElementById("achievementDate");
+
+        const achievementDescription =
+            document.getElementById("achievementDescription");
+
+        const achievementList =
+            document.getElementById("achievementList");
+
+
+        /* ================= LOAD ACHIEVEMENTS ================= */
+
+        let achievements =
+            JSON.parse(
+                localStorage.getItem("userAchievements")
+            ) || [];
+
+
+        /* ================= SAVE ACHIEVEMENTS ================= */
+
+        function saveAchievements() {
+
+            localStorage.setItem(
+                "userAchievements",
+                JSON.stringify(achievements)
+            );
+
+        }
+
+
+        /* ================= GET ICON ================= */
+
+        function getAchievementIcon(type) {
+
+            if (type === "Certificate") {
+                return "bi-award";
+            }
+
+            else if (type === "Project") {
+                return "bi-code-square";
+            }
+
+            else if (type === "Internship") {
+                return "bi-briefcase";
+            }
+
+            else if (type === "Course") {
+                return "bi-book";
+            }
+
+            else if (type === "Competition") {
+                return "bi-trophy";
+            }
+
+            else {
+                return "bi-star";
+            }
+
+        }
+
+
+        /* ================= UPDATE STATISTICS ================= */
+
+        function updateStatistics() {
+
+            document.getElementById(
+                "totalAchievements"
+            ).textContent =
+                achievements.length;
+
+        }
+
+
+        /* ================= DISPLAY ACHIEVEMENTS ================= */
+
+        function displayAchievements() {
+
+            achievementList.innerHTML = "";
+
+
+            /* NO ACHIEVEMENTS */
+
+            if (achievements.length === 0) {
+
+                achievementList.innerHTML = `
+
+                    <div class="empty-message">
+
+                        <i class="bi bi-trophy"></i>
+
+                        <h5>No achievements added yet</h5>
+
+                        <p>
+                            Add your certificates, projects,
+                            internships and accomplishments.
+                        </p>
+
+                    </div>
+
+                `;
+
+                updateStatistics();
+
+                return;
+
+            }
+
+
+            /* DISPLAY EACH ACHIEVEMENT */
+
+            achievements.forEach(
+                function (achievement, index) {
+
+                    const icon =
+                        getAchievementIcon(
+                            achievement.type
+                        );
+
+
+                    achievementList.innerHTML += `
+
+                        <div class="achievement-item">
+
+                            <div
+                                class="d-flex
+                                justify-content-between
+                                align-items-start
+                                flex-wrap">
+
+
+                                <div
+                                    class="d-flex
+                                    align-items-start
+                                    gap-3">
+
+
+                                    <!-- ICON -->
+
+                                    <div
+                                        class="achievement-icon">
+
+                                        <i
+                                            class="bi ${icon}">
+
+                                        </i>
+
+                                    </div>
+
+
+                                    <!-- INFORMATION -->
+
+                                    <div>
+
+                                        <div
+                                            class="achievement-title">
+
+                                            ${achievement.title}
+
+                                        </div>
+
+
+                                        <div
+                                            class="achievement-info">
+
+                                            ${
+                                                achievement.organization
+                                                || "Not specified"
+                                            }
+
+                                            •
+
+                                            ${achievement.date}
+
+                                        </div>
+
+
+                                        <span class="type-badge">
+
+                                            ${achievement.type}
+
+                                        </span>
+
+
+                                        ${
+                                            achievement.description
+                                            ? `
+
+                                            <div
+                                                class="achievement-description">
+
+                                                ${achievement.description}
+
+                                            </div>
+
+                                            `
+                                            : ""
+                                        }
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- DELETE -->
+
+                                <button
+                                    class="delete-btn"
+                                    onclick="deleteAchievement(${index})">
+
+                                    <i class="bi bi-trash"></i>
+
+                                </button>
+
+
+                            </div>
+
+                        </div>
+
+                    `;
+
+                }
+            );
+
+
+            updateStatistics();
+
+        }
+
+
+        /* ================= ADD ACHIEVEMENT ================= */
+
+        achievementForm.addEventListener(
+            "submit",
+            function (event) {
+
+                event.preventDefault();
+
+
+                const newAchievement = {
+
+                    title:
+                        achievementTitle.value.trim(),
+
+                    type:
+                        achievementType.value,
+
+                    organization:
+                        achievementOrganization.value.trim(),
+
+                    date:
+                        achievementDate.value,
+
+                    description:
+                        achievementDescription.value.trim()
+
+                };
+
+
+                achievements.push(
+                    newAchievement
+                );
+
+
+                saveAchievements();
+
+
+                displayAchievements();
+
+
+                achievementForm.reset();
+
+            }
+        );
+
+
+        /* ================= DELETE ACHIEVEMENT ================= */
+
+        function deleteAchievement(index) {
+
+            achievements.splice(
+                index,
+                1
+            );
+
+
+            saveAchievements();
+
+
+            displayAchievements();
+
+        }
+
+
+        /* ================= INITIAL DISPLAY ================= */
+
+        displayAchievements();
+
+    </script>
+
+
+    <!-- Bootstrap JavaScript -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+
+    </script>
+
+</body>
+
+</html>
